@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CzasoOdliczator</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9b040b6ba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <div class="counter-app">
+        <div class="settings ">
+            <h1>ustawienia</h1>
+            <label for="event-name">Nazwa wydarzenia:</label>
+            <input type="text" id="event-name" value="Nowy rok">
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Dzień:</label></td>
+                    <td><label for="event-month">Miesiąc:</label></td>
+                    <td><label for="event-year">Rok:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" max="31" value="1"></td>
+                    <td><input type="number" id="event-month" max="12" value="10"></td>
+                    <td><input type="number" id="event-year" max="2222" value="2023"></td>
+                </tr>
+            </table>
+            <label for="event-image">Link do obrazka:</label>
+            <input type="text" id="event-image" value="new_year.jpg">
+            <button class="save">Zapisz</button>
+        </div>
+
+
+        <div class="body-app">
+            <div class="image-section">
+                <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="time-section">
+                <h3><span class="event">Nowy rok</span> za:</h3>
+                <div class="time-cards">
+                    <card>
+                        <p class="days-count numbers">1</p>
+                        <p class="card-title">Dni</p>
+                    </card>
+                    <card>
+                        <p class="hours-count numbers">1</p>
+                        <p class="card-title">Godzin</p>
+                    </card>
+                    <card>
+                        <p class="minutes-count numbers">1</p>
+                        <p class="card-title">Minut</p>
+                    </card>
+                    <card>
+                        <p class="seconds-count numbers">1</p>
+                        <p class="card-title">Sekund</p>
+                    </card>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
